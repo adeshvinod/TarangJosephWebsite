@@ -482,11 +482,8 @@
   .watch { background: var(--slate-ink); color: var(--cream); }
   .watch .eyebrow { color: var(--peach); }
   .watch-grid {
-    display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; margin-top: 56px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 56px;
   }
-  .watch-main { aspect-ratio: 16/9; background: #000; border-radius: 6px; overflow: hidden; }
-  .watch-main iframe { width: 100%; height: 100%; border: 0; }
-  .watch-side { display: grid; gap: 16px; }
   .watch-card {
     aspect-ratio: 16/9; background: #000; border-radius: 4px; overflow: hidden;
     position: relative; cursor: pointer;
@@ -904,15 +901,17 @@
       <p class="hero-sub">Singer, pianist, songwriter — fusing old-school disco, funk &amp; soul with the accessibility of modern pop. A truly unique voice from Bangalore.</p>
 
       <div class="hero-ctas">
-        <a class="pill" href="#release">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          New single — Irresistible · Apr 17 ’26
-        </a>
         <a class="pill ghost" href="https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM" target="_blank" rel="noopener">
           Spotify
         </a>
         <a class="pill ghost" href="https://music.apple.com/in/artist/tarang-joseph/1446311498" target="_blank" rel="noopener">
           Apple Music
+        </a>
+        <a class="pill ghost" href="https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A" target="_blank" rel="noopener">
+          YouTube
+        </a>
+        <a class="pill ghost" href="https://www.instagram.com/tarangjoseph/" target="_blank" rel="noopener">
+          Instagram
         </a>
       </div>
     </div>
@@ -999,13 +998,13 @@ ACROSS PLATFORMS</div>
         <h2 class="release-title-typo" style="display:none;">Irresistible</h2>
         <p class="release-desc">The new single. Built on a fat groove, a sticky topline, and that signature Tarang-Joseph warmth — funk, soul, and modern pop sheen.</p>
         <div class="stream-row">
-          <a class="pill" href="https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM" target="_blank" rel="noopener">
+          <a class="pill" href="https://open.spotify.com/album/4H2VbBKjhZ5mkmVfQdhqtR" target="_blank" rel="noopener">
             ▶ Spotify
           </a>
-          <a class="pill" href="https://music.apple.com/in/artist/tarang-joseph/1446311498" target="_blank" rel="noopener">
+          <a class="pill" href="https://music.apple.com/in/album/irresistable-single/1886402689" target="_blank" rel="noopener">
             Apple Music
           </a>
-          <a class="pill" href="https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A" target="_blank" rel="noopener">
+          <a class="pill" href="https://www.youtube.com/watch?v=2e9JyZD2F0I" target="_blank" rel="noopener">
             YouTube
           </a>
         </div>
@@ -1048,27 +1047,18 @@ ACROSS PLATFORMS</div>
       <p class="lede" style="margin-top:24px; opacity:.85;">Music videos, live takes, festival cuts.</p>
 
       <div class="watch-grid">
-        <div class="watch-main">
-          <iframe
-            src="https://www.youtube.com/embed/uG4UloVo2Qg"
-            title="Superhuman — Tarang Joseph"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="watch-side">
-          <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjEv57l77NE4zIJRBEkXyQYH" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--burnt), var(--burnt-deep));">
-            <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
-              <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Music videos</span>
-              <span style="font-family:var(--type-display); font-size:32px; line-height:0.95; text-transform:uppercase; color: var(--cream);">Music<br>Videos</span>
-            </div>
-          </a>
-          <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjFmC8xqj7jXTHlEKoyOPZy6" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--slate), var(--slate-ink));">
-            <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
-              <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Live cuts</span>
-              <span style="font-family:var(--type-display); font-size:32px; line-height:0.95; text-transform:uppercase; color: var(--cream);">Live<br>Sessions</span>
-            </div>
-          </a>
-        </div>
+        <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjEv57l77NE4zIJRBEkXyQYH" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--burnt), var(--burnt-deep));">
+          <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Music videos</span>
+            <span style="font-family:var(--type-display); font-size:clamp(20px, 4.5vw, 32px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Music<br>Videos</span>
+          </div>
+        </a>
+        <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjFmC8xqj7jXTHlEKoyOPZy6" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--slate), var(--slate-ink));">
+          <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Live cuts</span>
+            <span style="font-family:var(--type-display); font-size:clamp(20px, 4.5vw, 32px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Live<br>Sessions</span>
+          </div>
+        </a>
       </div>
 
       <div class="watch-featured">
@@ -1416,22 +1406,31 @@ ACROSS PLATFORMS</div>
     })();
 
     // Discography — 6 singles with real cover art + streaming modal
-    const SPOTIFY = 'https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM';
-    const APPLE = 'https://music.apple.com/in/artist/tarang-joseph/1446311498';
-    const YT = 'https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A';
     const releases = [
       { title: 'Irresistible',   year: '2026', type: 'Single',     cover: 'assets/irresistible.png',
-        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+        spotify: 'https://open.spotify.com/album/4H2VbBKjhZ5mkmVfQdhqtR',
+        apple:   'https://music.apple.com/in/album/irresistable-single/1886402689',
+        youtube: 'https://www.youtube.com/watch?v=2e9JyZD2F0I' },
       { title: 'One Track Mind', year: '2025', type: 'Single',     cover: 'assets/one-track-mind.jpg',
-        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+        spotify: 'https://open.spotify.com/album/4Fs5G1NSE9JoDL6vXCH5Iz',
+        apple:   'https://music.apple.com/in/album/one-track-mind-single/1826468374',
+        youtube: 'https://www.youtube.com/watch?v=E0zIRgGBUMo' },
       { title: 'Liquid Sunshine',year: '2024', type: 'EP',         cover: 'assets/liquid-sunshine.jpeg',
-        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+        spotify: 'https://open.spotify.com/album/0vdnqD6CHdmIpYMw9XxbSR',
+        apple:   'https://music.apple.com/in/album/liquid-sunshine-ep/1775116415',
+        youtube: 'https://www.youtube.com/watch?v=duBes1hFr6o' },
       { title: 'Take Me Away',   year: '2025', type: 'Single',     cover: 'assets/take-me-away.jpeg',
-        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+        spotify: 'https://open.spotify.com/album/3AMBkDB0XMIEpEwBAYQ2AS',
+        apple:   'https://music.apple.com/in/album/take-me-away-single/1739306651',
+        youtube: 'https://www.youtube.com/watch?v=YcvqAoOhMN0' },
       { title: 'Make It Right',  year: '2023', type: 'Single',     cover: 'assets/make-it-right.jpeg',
-        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+        spotify: 'https://open.spotify.com/album/1VDzwJ22X6ExgNtr3rnL9G',
+        apple:   'https://music.apple.com/in/album/make-it-right-single/1771345292',
+        youtube: 'https://www.youtube.com/watch?v=6gITwcH8kew' },
       { title: 'Superhuman',     year: '2022', type: 'w/ RANJ & Mary Ann', cover: 'assets/superhuman.jpeg',
-        spotify: SPOTIFY, apple: APPLE, youtube: 'https://www.youtube.com/watch?v=uG4UloVo2Qg' }
+        spotify: 'https://open.spotify.com/album/6epc0ugqqQnHQnauZqJPhm',
+        apple:   'https://music.apple.com/in/album/superhuman/1622095503?i=1622095504',
+        youtube: 'https://www.youtube.com/watch?v=uG4UloVo2Qg' }
     ];
     const grid = document.getElementById('discoGrid');
     grid.innerHTML = releases.map((r, i) => `
