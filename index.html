@@ -789,17 +789,21 @@
   }
   @media (max-width: 600px) {
     .nav {
-      padding: 4px 6px; gap: 2px;
-      max-width: calc(100% - 16px);
+      position: fixed; top: auto; bottom: 12px; left: 12px; right: 12px;
+      transform: none; max-width: none;
+      justify-content: space-between; padding: 4px 6px; gap: 2px;
+      overflow-x: auto; scrollbar-width: none;
     }
-    .nav a { padding: 6px 8px; font-size: 9px; }
-    .hero { padding: 70px 16px 0; min-height: 90vh; }
-    .hero-inner { gap: 18px; padding: 20px 0 50px; }
+    .nav::-webkit-scrollbar { display: none; }
+    .nav a { padding: 6px 8px; font-size: 9px; flex-shrink: 0; }
+    .nav .nav-mark { flex-shrink: 0; }
+    .hero { padding: 24px 16px 0; min-height: 90vh; }
+    .hero-inner { gap: 18px; padding: 0 0 50px; justify-content: flex-start; }
     .hero-logo { width: min(88vw, 420px); }
     .hero-corners { left: 16px; right: 16px; top: 78px; height: calc(100% - 78px - 200px); font-size: 9px; letter-spacing: .18em; gap: 8px; }
     .hero-corners .tick { width: 10px; height: 10px; }
     .hero-sparkles span { font-size: 10px !important; }
-    .scroll-cue { font-size: 9px; }
+    .scroll-cue { bottom: 76px; font-size: 9px; } /* clear of bottom nav */
     .scroll-cue .line { height: 24px; }
     .hero::before { width: 160vw; height: 160vw; opacity: .4; }
     .hero-sub { font-size: 15px; }
@@ -1050,13 +1054,13 @@ ACROSS PLATFORMS</div>
         <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjEv57l77NE4zIJRBEkXyQYH" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--burnt), var(--burnt-deep));">
           <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
             <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Music videos</span>
-            <span style="font-family:var(--type-display); font-size:clamp(20px, 4.5vw, 32px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Music<br>Videos</span>
+            <span style="font-family:var(--type-display); font-size:clamp(28px, 6vw, 80px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Music<br>Videos</span>
           </div>
         </a>
         <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjFmC8xqj7jXTHlEKoyOPZy6" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--slate), var(--slate-ink));">
           <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
             <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Live cuts</span>
-            <span style="font-family:var(--type-display); font-size:clamp(20px, 4.5vw, 32px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Live<br>Sessions</span>
+            <span style="font-family:var(--type-display); font-size:clamp(28px, 6vw, 80px); line-height:0.95; text-transform:uppercase; color: var(--cream);">Live<br>Sessions</span>
           </div>
         </a>
       </div>
