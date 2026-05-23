@@ -757,7 +757,8 @@
     .nav .nav-mark { width: 24px; height: 24px; font-size: 11px; }
     section { padding: 70px 20px; }
     .hero { padding: 100px 16px 0; }
-    .about-grid, .release-grid, .watch-grid, .bio-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-grid, .release-grid, .bio-grid { grid-template-columns: 1fr; gap: 40px; }
+    .watch-grid { gap: 16px; }
     .release-grid { gap: 32px; }
     .watch-featured { grid-template-columns: 1fr; gap: 28px; }
     .live-photos { grid-template-columns: 1fr; gap: 16px; }
@@ -788,21 +789,17 @@
   }
   @media (max-width: 600px) {
     .nav {
-      position: fixed; top: auto; bottom: 12px; left: 12px; right: 12px;
-      transform: none; max-width: none;
-      justify-content: space-between; padding: 4px 6px; gap: 2px;
-      overflow-x: auto; scrollbar-width: none;
+      padding: 4px 6px; gap: 2px;
+      max-width: calc(100% - 16px);
     }
-    .nav::-webkit-scrollbar { display: none; }
-    .nav a { padding: 6px 8px; font-size: 9px; flex-shrink: 0; }
-    .nav .nav-mark { flex-shrink: 0; }
+    .nav a { padding: 6px 8px; font-size: 9px; }
     .hero { padding: 70px 16px 0; min-height: 90vh; }
     .hero-inner { gap: 18px; padding: 20px 0 50px; }
     .hero-logo { width: min(88vw, 420px); }
     .hero-corners { left: 16px; right: 16px; top: 78px; height: calc(100% - 78px - 200px); font-size: 9px; letter-spacing: .18em; gap: 8px; }
     .hero-corners .tick { width: 10px; height: 10px; }
     .hero-sparkles span { font-size: 10px !important; }
-    .scroll-cue { bottom: 76px; font-size: 9px; } /* clear of bottom nav */
+    .scroll-cue { font-size: 9px; }
     .scroll-cue .line { height: 24px; }
     .hero::before { width: 160vw; height: 160vw; opacity: .4; }
     .hero-sub { font-size: 15px; }
@@ -827,8 +824,11 @@
     .disco-card .play-overlay .play-btn { width: 36px; height: 36px; font-size: 14px; position: absolute; bottom: 10px; right: 10px; }
     .disco-spotify { margin-top: 48px; }
     .disco-spotify iframe { height: 152px; }
-    .watch-side { grid-template-columns: 1fr 1fr; display: grid; gap: 12px; }
-    .watch-card { aspect-ratio: 5/4; }
+    .watch-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 32px; }
+    .watch-card { aspect-ratio: 4/3; }
+    .watch-card .label { padding: 14px !important; }
+    .watch-card .label > span:first-child { font-size: 9px !important; letter-spacing: .15em !important; }
+    .watch-card .label > span:last-child { font-size: clamp(22px, 7vw, 32px) !important; }
     .feat-video .v-title { font-size: 18px; }
     .live-photo .cap { font-size: 9px; left: 12px; bottom: 10px; }
     .band-member { padding: 18px 16px; }
