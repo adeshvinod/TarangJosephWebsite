@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tarang Joseph — Singer · Pianist · Songwriter | Bangalore</title>
+<meta name="description" content="Bangalore-based singer, pianist and songwriter Tarang Joseph fuses old-school disco, funk and soul with modern pop. New single 'Irresistible' out April 17, 2026. Officially endorsed by Roland.">
+<meta name="author" content="Tarang Joseph">
+<meta property="og:title" content="Tarang Joseph — Disco · Funk · Soul">
+<meta property="og:description" content="Singer, pianist, songwriter from Bangalore. Nu-disco, funk and soul fused with modern pop.">
+<meta property="og:image" content="assets/tarang-stage.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tarang Joseph">
+<meta name="twitter:description" content="Singer, pianist, songwriter from Bangalore. Disco · Funk · Soul.">
+<meta name="twitter:image" content="assets/tarang-stage.jpg">
+<link rel="icon" type="image/png" href="assets/logo-cropped.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Anton&family=Pinyon+Script&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<script>
+  // Defaults for Tweaks (rewritable on disk between EDITMODE markers)
+  window.__TWEAKS = /*EDITMODE-BEGIN*/{
+    "palette": "warm",
+    "showMarquee": true,
+    "grain": true
+  }/*EDITMODE-END*/;
+</script>
+
+<style>
+  :root {
+    --slate:        #4a5566;
+    --slate-deep:   #2f3742;
+    --slate-ink:    #1a1f27;
+    --sand:         #d5c9b4;
+    --sand-light:   #ebe1cb;
+    --cream:        #efeec4;
+    --paper:        #f6efde;
+    --burnt:        #c1551c;
+    --burnt-deep:   #9e3f12;
+    --peach:        #ea9b75;
+    --olive:        #4a412e;
+    --green-dark:   #243e3c;
+    --ink:          #1a1815;
+    --type-display: "Bowlby One", "Arial Black", sans-serif;
+    --type-tall:    "Anton", "Arial Narrow", sans-serif;
+    --type-script:  "Pinyon Script", cursive;
+    --type-body:    "Inter", system-ui, sans-serif;
+    --type-mono:    "IBM Plex Mono", ui-monospace, monospace;
+  }
+  /* Palette modes (Tweaks) */
+  body[data-pal="warm"]      { --bg: var(--paper); --fg: var(--slate-deep); --bg-alt: var(--slate-deep); --fg-alt: var(--sand); --accent: var(--burnt); }
+  body[data-pal="cool"]      { --bg: var(--slate-deep); --fg: var(--sand); --bg-alt: var(--paper); --fg-alt: var(--slate-deep); --accent: var(--peach); }
+  body[data-pal="sunshine"]  { --bg: #efeec4; --fg: #2f3742; --bg-alt: #c1551c; --fg-alt: #efeec4; --accent: #2f3742; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--fg); font-family: var(--type-body); -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+  body { transition: background .4s ease, color .4s ease; overflow-x: hidden; }
+
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Subtle film grain overlay (toggleable) */
+  body[data-grain="true"]::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+    opacity: .08;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: fixed; top: 18px; left: 50%; transform: translateX(-50%);
+    z-index: 100; display: flex; align-items: center; gap: 4px;
+    padding: 6px 8px; border-radius: 999px;
+    background: color-mix(in oklab, var(--bg) 80%, transparent);
+    border: 1px solid color-mix(in oklab, var(--fg) 18%, transparent);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .nav a {
+    padding: 8px 14px; border-radius: 999px; transition: background .2s, color .2s;
+  }
+  .nav a:hover { background: var(--fg); color: var(--bg); }
+  .nav .nav-mark {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: var(--bg);
+    display: grid; place-items: center;
+    font-family: var(--type-display); font-size: 13px;
+    margin-right: 6px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    min-height: 100vh; position: relative; padding: 110px 20px 0;
+    display: flex; flex-direction: column; justify-content: space-between;
+    overflow: hidden;
+  }
+  /* soft radial glow behind logo */
+  .hero::before {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -55%);
+    width: min(120vw, 1100px); height: min(120vw, 1100px);
+    background: radial-gradient(circle,
+      color-mix(in oklab, var(--accent) 30%, transparent) 0%,
+      color-mix(in oklab, var(--accent) 10%, transparent) 30%,
+      transparent 65%);
+    opacity: .55;
+    pointer-events: none;
+    filter: blur(20px);
+    z-index: 0;
+  }
+  /* faint diagonal scan lines */
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0 24px,
+      color-mix(in oklab, var(--fg) 4%, transparent) 24px 25px
+    );
+    pointer-events: none;
+    opacity: .35;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+
+  /* Hero corner stamps */
+  .hero-corners {
+    position: absolute; left: 28px; right: 28px; top: 96px;
+    height: calc(100% - 96px - 180px); /* leave room for hero-strip */
+    pointer-events: none;
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+    font-family: var(--type-mono); font-size: 10px; letter-spacing: .25em; text-transform: uppercase;
+    color: var(--fg); opacity: .55; z-index: 1;
+  }
+  .hero-corners > div { display: flex; align-items: flex-start; gap: 8px; }
+  .hero-corners > div:nth-child(1) { justify-content: flex-start; }
+  .hero-corners > div:nth-child(2) { justify-content: flex-end; text-align: right; }
+  .hero-corners > div:nth-child(3) { justify-content: flex-start; align-items: flex-end; }
+  .hero-corners > div:nth-child(4) { justify-content: flex-end; align-items: flex-end; text-align: right; }
+  .hero-corners .tick {
+    width: 14px; height: 14px; border: 1px solid currentColor;
+    border-radius: 50%; flex-shrink: 0;
+    display: grid; place-items: center;
+    font-size: 8px;
+  }
+  .hero-corners .tick.filled { background: currentColor; }
+
+  /* Floating star sparkles around the logo */
+  .hero-sparkles { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+  .hero-sparkles span {
+    position: absolute;
+    display: block;
+    color: var(--accent);
+    font-size: 14px;
+    opacity: 0;
+    animation: sparkle 5s ease-in-out infinite;
+  }
+  .hero-sparkles span:nth-child(1) { left: 22%; top: 36%; animation-delay: 0s; font-size: 18px; }
+  .hero-sparkles span:nth-child(2) { left: 78%; top: 34%; animation-delay: .8s; font-size: 12px; }
+  .hero-sparkles span:nth-child(3) { left: 18%; top: 56%; animation-delay: 1.6s; font-size: 10px; }
+  .hero-sparkles span:nth-child(4) { left: 84%; top: 60%; animation-delay: 2.4s; font-size: 16px; }
+  .hero-sparkles span:nth-child(5) { left: 50%; top: 28%; animation-delay: 3.2s; font-size: 11px; opacity: .4; }
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(.4) rotate(0deg); }
+    20%      { opacity: .8; transform: scale(1) rotate(180deg); }
+    50%      { opacity: 1; transform: scale(1.1) rotate(360deg); }
+    80%      { opacity: .6; transform: scale(.9) rotate(540deg); }
+  }
+
+  /* Scroll cue — fixed to viewport bottom, fades on scroll */
+  .scroll-cue {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%);
+    font-family: var(--type-mono); font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--fg); opacity: .6;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    z-index: 50; pointer-events: auto;
+    animation: cueFade 3s ease-in-out infinite;
+    transition: opacity .4s ease, transform .4s ease;
+    text-decoration: none;
+    mix-blend-mode: difference;
+  }
+  .scroll-cue.hide { opacity: 0; transform: translate(-50%, 30px); pointer-events: none; }
+  .scroll-cue .line {
+    width: 1px; height: 36px; background: currentColor;
+    transform-origin: top;
+    animation: cueLine 2s ease-in-out infinite;
+  }
+  @keyframes cueLine {
+    0%, 100% { transform: scaleY(.3); opacity: .3; }
+    50%      { transform: scaleY(1); opacity: 1; }
+  }
+  @keyframes cueFade {
+    0%, 100% { opacity: .35; }
+    50%      { opacity: .85; }
+  }
+
+  .hero-inner {
+    flex: 1; display: flex; flex-direction: column; justify-content: center;
+    align-items: center; text-align: center; gap: 24px;
+    padding: 20px 0 60px;
+  }
+  .hero-tag {
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase;
+    opacity: .75; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center;
+    padding: 8px 18px;
+    border: 1px solid color-mix(in oklab, var(--fg) 25%, transparent);
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--bg) 60%, transparent);
+    backdrop-filter: blur(8px);
+  }
+  .hero-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+
+  .hero-logo {
+    width: clamp(300px, 70vw, 820px);
+    aspect-ratio: 1.82 / 1;
+    display: block;
+    background-color: var(--slate-deep);
+    -webkit-mask-image: url('assets/logo-cropped.png');
+            mask-image: url('assets/logo-cropped.png');
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,.12));
+    animation: heroFloat 6s ease-in-out infinite;
+  }
+  @keyframes heroFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(-0.4deg); }
+  }
+  body[data-pal="warm"]     .hero-logo { background-color: var(--slate-deep); }
+  body[data-pal="cool"]     .hero-logo { background-color: var(--sand); filter: drop-shadow(0 6px 18px rgba(0,0,0,.4)); }
+  body[data-pal="sunshine"] .hero-logo { background-color: var(--burnt-deep); }
+
+  .hero-title { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  .hero-sub {
+    max-width: 720px; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.5;
+    text-wrap: balance; opacity: .85;
+  }
+  .hero-sub b { font-weight: 700; }
+
+  .hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 999px;
+    background: var(--fg); color: var(--bg);
+    font-family: var(--type-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+    border: 1px solid var(--fg);
+    transition: transform .2s ease, background .2s, color .2s;
+  }
+  .pill:hover { transform: translateY(-2px); background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .pill.ghost { background: transparent; color: var(--fg); }
+  .pill.ghost:hover { background: var(--fg); color: var(--bg); }
+  .pill svg { width: 14px; height: 14px; }
+
+  /* Bottom strip in hero */
+  .hero-strip {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 24px; padding: 24px 0 28px; font-family: var(--type-mono);
+    font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    border-top: 1px solid color-mix(in oklab, var(--fg) 25%, transparent);
+    margin-top: 32px;
+  }
+  .hero-strip .col { display: flex; flex-direction: column; gap: 4px; }
+  .hero-strip .col-label { opacity: .55; }
+  .hero-strip .col-value { font-size: 14px; letter-spacing: .05em; }
+
+  /* ---------- MARQUEE ---------- */
+  .marquee {
+    overflow: hidden; white-space: nowrap;
+    background: var(--accent); color: var(--bg);
+    padding: 18px 0; border-top: 1px solid var(--fg); border-bottom: 1px solid var(--fg);
+  }
+  .marquee-track {
+    display: inline-block; animation: scroll 40s linear infinite;
+    font-family: var(--type-display); font-size: 44px; letter-spacing: .02em; text-transform: uppercase;
+  }
+  .marquee-track .star { color: inherit; margin: 0 24px; opacity: .7; display: inline-block; vertical-align: middle; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  body[data-marquee="false"] .marquee { display: none; }
+
+  /* ---------- GENERIC SECTION ---------- */
+  section { padding: 100px 32px; position: relative; }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  .eyebrow {
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase;
+    opacity: .65; margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
+  }
+  .eyebrow::before { content: "★"; color: var(--accent); }
+  .h2 {
+    font-family: var(--type-display);
+    font-size: clamp(48px, 8vw, 120px); line-height: 0.9;
+    letter-spacing: -0.01em; text-transform: uppercase;
+  }
+  .h3 {
+    font-family: var(--type-display); font-size: clamp(28px, 4vw, 56px);
+    line-height: 0.95; text-transform: uppercase;
+  }
+  .lede {
+    font-size: clamp(20px, 2.2vw, 32px); line-height: 1.35; max-width: 900px;
+    font-weight: 400; text-wrap: balance;
+  }
+  .body-txt { font-size: 17px; line-height: 1.65; max-width: 60ch; opacity: .85; }
+  .body-txt + .body-txt { margin-top: 1em; }
+
+  /* ---------- ABOUT ---------- */
+  .about { background: var(--slate-deep); color: var(--sand); }
+  .about .eyebrow { color: var(--peach); }
+  .about .lede {
+    font-size: clamp(19px, 1.8vw, 26px);
+    line-height: 1.45;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    max-width: 56ch;
+  }
+  .about .about-lede-sub {
+    margin-top: 22px;
+    font-size: clamp(16px, 1.45vw, 20px);
+    line-height: 1.55;
+    opacity: .8;
+    font-weight: 300;
+  }
+  .about .about-lede-sub em {
+    font-style: normal;
+    color: var(--peach);
+    font-weight: 500;
+  }
+  .about-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center;
+  }
+  .about-photo {
+    aspect-ratio: 4/5; background: var(--slate); border-radius: 8px; overflow: hidden;
+    position: relative; box-shadow: 0 30px 60px rgba(0,0,0,.3);
+    transform: rotate(-1.5deg);
+  }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.85) contrast(1.05); }
+  .about-photo::after {
+    content: "ON STAGE / 2025"; position: absolute; bottom: 12px; right: 14px;
+    font-family: var(--type-mono); font-size: 10px; letter-spacing: .2em;
+    color: var(--cream); opacity: .85;
+  }
+
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px; margin-top: 40px;
+    padding-top: 32px; border-top: 1px solid color-mix(in oklab, var(--sand) 25%, transparent);
+  }
+  .stat-num { font-family: var(--type-display); font-size: clamp(36px, 4vw, 56px); color: var(--peach); line-height: 1; }
+  .stat-lbl { font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    margin-top: 8px; opacity: .75; line-height: 1.4; }
+
+  /* ---------- RELEASE FEATURE ---------- */
+  .release { background: var(--cream); color: var(--ink); padding: 120px 32px; overflow: hidden; }
+  .release-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .release-cover {
+    aspect-ratio: 1; border-radius: 4px; overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,.25), 0 0 0 1px rgba(0,0,0,.1);
+    position: relative;
+    transform: rotate(2deg);
+    transition: transform .4s ease;
+  }
+  .release-cover:hover { transform: rotate(0deg) scale(1.02); }
+  .release-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .release-meta { font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; opacity: .6; }
+  .release-title-script { font-family: var(--type-script); font-size: clamp(72px, 9vw, 140px); line-height: 0.9; color: var(--burnt); margin: 16px 0 8px; }
+  .release-title-typo { font-family: var(--type-display); font-size: clamp(40px, 5vw, 72px); line-height: 0.95; text-transform: uppercase; letter-spacing: -.01em; }
+  .release-desc { margin: 28px 0; font-size: 17px; line-height: 1.6; max-width: 50ch; opacity: .85; }
+  .stream-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .stream-row .pill { background: var(--slate-deep); color: var(--cream); border-color: var(--slate-deep); }
+  .stream-row .pill:hover { background: var(--burnt); border-color: var(--burnt); }
+
+  /* ---------- DISCOGRAPHY ---------- */
+  .disco { background: var(--paper); color: var(--ink); }
+  .disco-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px; margin-bottom: 64px; }
+  .disco-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 28px;
+  }
+  .disco-card {
+    cursor: pointer; transition: transform .25s ease;
+    background: none; border: none; padding: 0; text-align: left; width: 100%;
+    font: inherit; color: inherit;
+  }
+  .disco-card:hover { transform: translateY(-6px); }
+  .disco-card:hover .art { box-shadow: 0 24px 48px rgba(0,0,0,.28); }
+  .disco-card:hover .art .play-overlay { opacity: 1; }
+  .disco-card .art {
+    aspect-ratio: 1; background: var(--sand); border-radius: 4px; overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+    position: relative;
+    transition: box-shadow .3s ease;
+  }
+  .disco-card .art img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .disco-card .play-overlay {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    background: linear-gradient(135deg, rgba(193,85,28,.55), rgba(47,55,66,.55));
+    opacity: 0; transition: opacity .25s ease;
+  }
+  .disco-card .play-overlay .play-btn {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--cream); color: var(--burnt);
+    display: grid; place-items: center;
+    font-size: 22px; padding-left: 4px;
+  }
+  .disco-card .meta { display: flex; flex-direction: column; gap: 4px; margin-top: 14px; font-family: var(--type-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; opacity: .75; }
+  .disco-card .name { font-family: var(--type-tall); font-size: 22px; letter-spacing: 0; text-transform: uppercase; opacity: 1; color: var(--ink); line-height: 1; }
+  .disco-card .sub { font-family: var(--type-mono); font-size: 11px; letter-spacing: .12em; opacity: .65; }
+
+  /* Streaming modal */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(20,18,15,.7);
+    display: none; align-items: center; justify-content: center;
+    z-index: 1000; padding: 20px; backdrop-filter: blur(8px);
+    animation: fadeIn .25s ease;
+  }
+  .modal-backdrop.open { display: flex; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes popUp { from { opacity: 0; transform: scale(.92) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+  .modal {
+    background: var(--cream); color: var(--ink);
+    border-radius: 12px; padding: 28px; max-width: 440px; width: 100%;
+    text-align: center; position: relative;
+    animation: popUp .3s cubic-bezier(.2,.9,.3,1);
+    box-shadow: 0 30px 80px rgba(0,0,0,.5);
+  }
+  .modal .close-btn {
+    position: absolute; top: 12px; right: 12px;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: transparent; border: 1px solid color-mix(in oklab, var(--ink) 25%, transparent);
+    color: var(--ink); cursor: pointer; font-size: 16px;
+    display: grid; place-items: center;
+    transition: background .2s, color .2s;
+  }
+  .modal .close-btn:hover { background: var(--ink); color: var(--cream); }
+  .modal-cover {
+    width: 140px; height: 140px; border-radius: 6px; overflow: hidden;
+    margin: 8px auto 18px; box-shadow: 0 12px 28px rgba(0,0,0,.2);
+  }
+  .modal-cover img { width: 100%; height: 100%; object-fit: cover; }
+  .modal-title { font-family: var(--type-display); font-size: 28px; text-transform: uppercase; line-height: 1; }
+  .modal-sub { font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; opacity: .6; margin-top: 6px; }
+  .modal-listen-label { font-family: var(--type-mono); font-size: 10px; letter-spacing: .25em; text-transform: uppercase; opacity: .5; margin-top: 24px; }
+  .modal-services { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .svc-btn {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    padding: 16px 8px; border-radius: 8px;
+    background: var(--paper);
+    border: 1px solid color-mix(in oklab, var(--ink) 12%, transparent);
+    color: var(--ink); font-family: var(--type-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  .svc-btn:hover { transform: translateY(-2px); background: var(--ink); color: var(--cream); border-color: var(--ink); }
+  .svc-btn svg { width: 28px; height: 28px; }
+  .svc-btn.spotify:hover { background: #1db954; border-color: #1db954; color: #fff; }
+  .svc-btn.apple:hover { background: #fa57c1; border-color: #fa57c1; color: #fff; }
+  .svc-btn.youtube:hover { background: #ff0000; border-color: #ff0000; color: #fff; }
+
+
+  .disco-spotify {
+    margin-top: 80px; border-radius: 14px; overflow: hidden;
+    background: var(--slate-deep);
+  }
+  .disco-spotify iframe { display: block; width: 100%; height: 380px; border: 0; }
+
+  /* ---------- WATCH ---------- */
+  .watch { background: var(--slate-ink); color: var(--cream); }
+  .watch .eyebrow { color: var(--peach); }
+  .watch-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; margin-top: 56px;
+  }
+  .watch-main { aspect-ratio: 16/9; background: #000; border-radius: 6px; overflow: hidden; }
+  .watch-main iframe { width: 100%; height: 100%; border: 0; }
+  .watch-side { display: grid; gap: 16px; }
+  .watch-card {
+    aspect-ratio: 16/9; background: #000; border-radius: 4px; overflow: hidden;
+    position: relative; cursor: pointer;
+    transition: transform .25s ease;
+  }
+  .watch-card:hover { transform: scale(1.02); }
+  .watch-card iframe { width: 100%; height: 100%; border: 0; pointer-events: none; }
+  .watch-card .label {
+    position: absolute; bottom: 10px; left: 12px; right: 12px;
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--cream); text-shadow: 0 1px 4px rgba(0,0,0,.7);
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  }
+  .watch-card .label .play {
+    width: 28px; height: 28px; border-radius: 50%; background: var(--accent);
+    display: grid; place-items: center; color: var(--ink); font-size: 10px;
+  }
+
+  .watch-featured {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    margin-top: 48px;
+  }
+  .feat-video {
+    display: block;
+  }
+  .feat-video .frame {
+    aspect-ratio: 16/9; border-radius: 6px; overflow: hidden;
+    background: #000; box-shadow: 0 12px 28px rgba(0,0,0,.35);
+  }
+  .feat-video .frame iframe { width: 100%; height: 100%; border: 0; }
+  .feat-video .v-label {
+    margin-top: 14px; font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; opacity: .85;
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  }
+  .feat-video .v-title { font-family: var(--type-display); font-size: 22px; line-height: 1; text-transform: uppercase; letter-spacing: 0; color: var(--cream); margin-top: 6px; }
+  .feat-video .v-sub { font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; opacity: .6; }
+
+  /* ---------- LIVE ---------- */
+  .live { background: var(--burnt); color: var(--cream); }
+  .live .eyebrow { color: var(--cream); }
+  .shows-list { margin-top: 56px; }
+  .show-row {
+    display: grid; grid-template-columns: 1.4fr 1.4fr 130px;
+    align-items: center; gap: 24px;
+    padding: 26px 4px; border-top: 1px solid color-mix(in oklab, var(--cream) 35%, transparent);
+    font-family: var(--type-mono); font-size: 14px;
+    transition: padding-left .25s ease, background .25s ease;
+  }
+  .show-row:hover { padding-left: 28px; background: color-mix(in oklab, var(--cream) 8%, transparent); }
+  .show-row:last-child { border-bottom: 1px solid color-mix(in oklab, var(--cream) 35%, transparent); }
+  .show-date { font-family: var(--type-tall); font-size: 24px; text-transform: uppercase; letter-spacing: .02em; line-height: 1; }
+  .show-venue { font-family: var(--type-display); font-size: 22px; letter-spacing: 0; text-transform: uppercase; line-height: 1; }
+  .show-city { opacity: .75; }
+  .show-tag {
+    justify-self: end;
+    font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+    padding: 6px 10px; border: 1px solid currentColor; border-radius: 999px;
+    opacity: .85;
+  }
+
+  .live-photos {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    margin: 56px 0 16px;
+  }
+  .live-photo {
+    aspect-ratio: 4/3; border-radius: 6px; overflow: hidden; position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  }
+  .live-photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform .5s ease;
+  }
+  .live-photo:hover img { transform: scale(1.04); }
+  .live-photo .cap {
+    position: absolute; left: 16px; bottom: 14px; right: 16px;
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--cream); text-shadow: 0 1px 4px rgba(0,0,0,.6);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .live-photo .cap::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--cream);
+    box-shadow: 0 0 8px rgba(255,255,255,.6);
+  }
+
+  .live-foot { margin-top: 56px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; }
+
+  /* ---------- BAND ---------- */
+  .band { background: var(--green-dark); color: var(--cream); }
+  .band .eyebrow { color: var(--peach); }
+  .band-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    margin-top: 56px; border-top: 1px solid color-mix(in oklab, var(--cream) 25%, transparent);
+  }
+  .band-member {
+    padding: 26px 22px; border-right: 1px solid color-mix(in oklab, var(--cream) 25%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--cream) 25%, transparent);
+    display: flex; flex-direction: column; gap: 6px;
+    transition: background .3s ease;
+  }
+  .band-member:hover { background: color-mix(in oklab, var(--peach) 18%, transparent); }
+  .band-member:last-child { border-right: none; }
+  .band-name { font-family: var(--type-display); font-size: 26px; line-height: 0.95; text-transform: uppercase; }
+  .band-role { font-family: var(--type-tall); font-size: 15px; letter-spacing: .1em; text-transform: uppercase; opacity: .85; color: var(--peach); }
+
+  .band-photos {
+    display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px;
+    margin: 48px 0 16px;
+  }
+  .band-photo {
+    border-radius: 6px; overflow: hidden; position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  }
+  .band-photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform .5s ease;
+  }
+  .band-photo:hover img { transform: scale(1.03); }
+  .band-photos .p1 { aspect-ratio: 16/10; }
+  .band-photos .p2 { aspect-ratio: 4/5; }
+  .band-collabs {
+    margin: 48px 0 0;
+    padding: 28px 0;
+    border-top: 1px solid color-mix(in oklab, var(--cream) 25%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--cream) 25%, transparent);
+  }
+  .band-collabs h4 { font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; opacity: .65; margin-bottom: 14px; color: var(--peach); }
+  .band-collabs p { font-size: 17px; line-height: 1.55; max-width: 70ch; }
+  .band-collabs strong { color: var(--peach); font-weight: 600; }
+
+  /* ---------- PRESS ---------- */
+  .press { background: var(--paper); color: var(--ink); }
+  .press-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; }
+  .quote-card {
+    background: var(--cream); border-radius: 6px; padding: 32px 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 360px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    border: 1px solid color-mix(in oklab, var(--ink) 10%, transparent);
+  }
+  .quote-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  .quote-card .qmark { font-family: var(--type-display); font-size: 80px; line-height: 0.6; color: var(--burnt); }
+  .quote-card .qtext { font-size: 18px; line-height: 1.45; margin-top: 12px; }
+  .quote-card .qcite { font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; opacity: .65; margin-top: 24px; padding-top: 18px; border-top: 1px solid color-mix(in oklab, var(--ink) 15%, transparent); }
+  .quote-card .qpub { color: var(--burnt); font-weight: 600; }
+
+  /* ---------- BIO ---------- */
+  .bio { background: var(--sand-light); color: var(--ink); }
+  .bio-grid {
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; margin-top: 48px;
+  }
+  .bio-portrait {
+    aspect-ratio: 4/5; background: var(--slate); border-radius: 4px; overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,.18);
+    transform: rotate(1.5deg); position: sticky; top: 80px;
+  }
+  .bio-portrait img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.05); }
+  .bio-text p { font-size: 17px; line-height: 1.7; margin-bottom: 1em; max-width: 64ch; }
+  .bio-text p:first-of-type::first-line { font-family: var(--type-mono); letter-spacing: .03em; }
+  .bio-text p:first-of-type::first-letter {
+    font-family: var(--type-display); font-size: 88px; float: left;
+    line-height: 0.85; padding: 8px 12px 0 0; color: var(--burnt);
+  }
+  .bio-influences {
+    margin-top: 48px; padding-top: 32px;
+    border-top: 1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+  }
+  .bio-influences h4 { font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; opacity: .65; margin-bottom: 16px; }
+  .infl-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .infl-tags span {
+    padding: 8px 14px; border-radius: 999px; background: var(--cream);
+    font-family: var(--type-mono); font-size: 12px; letter-spacing: .03em;
+    border: 1px solid color-mix(in oklab, var(--ink) 12%, transparent);
+  }
+
+  /* ---------- BOOKING / CONTACT ---------- */
+  .booking { background: var(--burnt-deep); color: var(--cream); text-align: center; padding: 140px 32px; }
+  .booking .h2 { color: var(--cream); }
+  .booking .h2 em { font-family: var(--type-script); font-style: normal; color: var(--cream); }
+  .booking-sub { margin-top: 24px; font-size: 18px; opacity: .85; max-width: 520px; margin-inline: auto; }
+  .booking-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
+  .booking .pill { background: var(--cream); color: var(--burnt-deep); border-color: var(--cream); }
+  .booking .pill:hover { background: var(--slate-deep); color: var(--cream); border-color: var(--slate-deep); }
+  .booking .pill.ghost { background: transparent; color: var(--cream); border-color: var(--cream); }
+  .booking .pill.ghost:hover { background: var(--cream); color: var(--burnt-deep); }
+
+  /* ---------- FOOTER ---------- */
+  footer { background: var(--ink); color: var(--sand); padding: 80px 32px 40px; }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 80px;
+  }
+  .footer-logo {
+    font-family: var(--type-display); font-size: 36px; line-height: 0.9; text-transform: uppercase;
+    color: var(--cream); margin-bottom: 16px;
+  }
+  .footer-col h5 { font-family: var(--type-mono); font-size: 11px; letter-spacing: .25em; text-transform: uppercase; opacity: .55; margin-bottom: 16px; }
+  .footer-col a, .footer-col p { display: block; padding: 6px 0; font-size: 14px; opacity: .85; transition: opacity .2s, color .2s; }
+  .footer-col a:hover { color: var(--peach); opacity: 1; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;
+    padding-top: 32px; border-top: 1px solid color-mix(in oklab, var(--sand) 20%, transparent);
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; opacity: .65;
+  }
+  .footer-bottom .signature {
+    font-family: var(--type-display); font-size: 200px; line-height: 0.85; text-transform: uppercase;
+    color: var(--slate); letter-spacing: -.02em;
+    margin: 60px 0 -10px;
+    word-break: break-all;
+  }
+
+
+  /* ---------- ENDORSEMENT ---------- */
+  .endorse { background: var(--paper); color: var(--ink); }
+  .endorse-grid {
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: center;
+  }
+  .endorse .h2 { color: var(--ink); }
+  .endorse-brand {
+    color: #e84a13; /* Roland orange */
+    font-style: italic;
+  }
+  .endorse-mark {
+    margin-top: 40px; padding-top: 24px;
+    border-top: 1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+    display: flex; align-items: center; gap: 14px;
+    font-family: var(--type-mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+    opacity: .85;
+  }
+  .endorse-mark img {
+    width: 40px; height: 40px; object-fit: contain;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.08));
+  }
+  .endorse-mark .roland-mark {
+    font-family: var(--type-display);
+    font-style: italic;
+    font-size: 26px;
+    color: #e84a13;
+    letter-spacing: -.02em;
+    text-transform: none;
+    line-height: 1;
+  }
+  .endorse-video {
+    display: flex; flex-direction: column; align-items: center; gap: 16px;
+  }
+  .short-frame {
+    width: min(360px, 100%);
+    aspect-ratio: 9 / 16;
+    border-radius: 16px; overflow: hidden;
+    background: #000;
+    box-shadow: 0 30px 60px rgba(0,0,0,.25), 0 0 0 1px rgba(0,0,0,.08);
+    transform: rotate(-1deg);
+    transition: transform .4s ease;
+  }
+  .short-frame:hover { transform: rotate(0); }
+  .short-frame iframe { width: 100%; height: 100%; border: 0; }
+  .short-cap {
+    text-align: center;
+    font-family: var(--type-mono); font-size: 10px; letter-spacing: .25em; text-transform: uppercase;
+    line-height: 1.7;
+  }
+  .short-cap .ep { display: block; opacity: .65; }
+  .short-cap .for { display: block; color: #e84a13; font-weight: 600; }
+  @media (max-width: 1000px) {
+    .endorse-grid { grid-template-columns: 1fr; gap: 48px; }
+    .endorse-video { order: -1; }
+    .short-frame { transform: rotate(0); }
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 1000px) {
+    .nav { font-size: 10px; flex-wrap: wrap; max-width: calc(100% - 24px); justify-content: center; }
+    .nav a { padding: 6px 10px; }
+    .nav .nav-mark { width: 24px; height: 24px; font-size: 11px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 100px 16px 0; }
+    .about-grid, .release-grid, .watch-grid, .bio-grid { grid-template-columns: 1fr; gap: 40px; }
+    .release-grid { gap: 32px; }
+    .watch-featured { grid-template-columns: 1fr; gap: 28px; }
+    .live-photos { grid-template-columns: 1fr; gap: 16px; }
+    .band-photos { grid-template-columns: 1fr; gap: 16px; }
+    .band-photos .p1, .band-photos .p2 { aspect-ratio: 16/10; }
+    .band-grid { grid-template-columns: 1fr 1fr; }
+    .band-member { padding: 22px 18px; }
+    .band-member:nth-child(2n) { border-right: none; }
+    .press-grid { grid-template-columns: 1fr; }
+    .show-row {
+      grid-template-columns: 1fr;
+      gap: 4px;
+      padding: 18px 4px;
+    }
+    .show-row .show-venue { font-size: 18px; }
+    .show-row .show-city { font-size: 12px; }
+    .show-row .show-tag { justify-self: start; font-size: 9px; margin-top: 4px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .marquee-track { font-size: 28px; }
+    .hero-strip { flex-wrap: wrap; gap: 14px; padding: 16px 0 20px; }
+    .hero-strip .col-value { font-size: 12px; }
+    .footer-bottom .signature { font-size: 80px; }
+    .bio-portrait { position: static; transform: rotate(0); aspect-ratio: 4/3; max-height: 60vh; }
+    .quote-card { min-height: 0; padding: 24px 22px; }
+    .modal-services { grid-template-columns: 1fr 1fr 1fr; }
+    .modal { padding: 24px 20px; }
+    .modal-cover { width: 110px; height: 110px; }
+  }
+  @media (max-width: 600px) {
+    .nav {
+      position: fixed; top: auto; bottom: 12px; left: 12px; right: 12px;
+      transform: none; max-width: none;
+      justify-content: space-between; padding: 4px 6px; gap: 2px;
+      overflow-x: auto; scrollbar-width: none;
+    }
+    .nav::-webkit-scrollbar { display: none; }
+    .nav a { padding: 6px 8px; font-size: 9px; flex-shrink: 0; }
+    .nav .nav-mark { flex-shrink: 0; }
+    .hero { padding: 70px 16px 0; min-height: 90vh; }
+    .hero-inner { gap: 18px; padding: 20px 0 50px; }
+    .hero-logo { width: min(88vw, 420px); }
+    .hero-corners { left: 16px; right: 16px; top: 78px; height: calc(100% - 78px - 200px); font-size: 9px; letter-spacing: .18em; gap: 8px; }
+    .hero-corners .tick { width: 10px; height: 10px; }
+    .hero-sparkles span { font-size: 10px !important; }
+    .scroll-cue { bottom: 76px; font-size: 9px; } /* clear of bottom nav */
+    .scroll-cue .line { height: 24px; }
+    .hero::before { width: 160vw; height: 160vw; opacity: .4; }
+    .hero-sub { font-size: 15px; }
+    .hero-ctas { gap: 8px; }
+    .hero-ctas .pill { font-size: 10px; padding: 10px 14px; }
+    .hero-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; }
+    section { padding: 56px 18px; }
+    .eyebrow { font-size: 10px; letter-spacing: .2em; }
+    .h2 { font-size: clamp(36px, 11vw, 56px); }
+    .lede { font-size: 17px; }
+    .body-txt { font-size: 15px; }
+    .stats { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+    .stat-num { font-size: 30px; }
+    .stat-lbl { font-size: 10px; }
+    .release-title-script { font-size: clamp(56px, 18vw, 72px); margin: 10px 0 4px; }
+    .release-title-typo { font-size: clamp(34px, 11vw, 48px); }
+    .release-desc { font-size: 15px; margin: 20px 0; }
+    .disco-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .disco-card .name { font-size: 18px; }
+    .disco-card .play-overlay .play-btn { width: 48px; height: 48px; font-size: 18px; }
+    .disco-card .play-overlay { opacity: 1; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,.4)); }
+    .disco-card .play-overlay .play-btn { width: 36px; height: 36px; font-size: 14px; position: absolute; bottom: 10px; right: 10px; }
+    .disco-spotify { margin-top: 48px; }
+    .disco-spotify iframe { height: 152px; }
+    .watch-side { grid-template-columns: 1fr 1fr; display: grid; gap: 12px; }
+    .watch-card { aspect-ratio: 5/4; }
+    .feat-video .v-title { font-size: 18px; }
+    .live-photo .cap { font-size: 9px; left: 12px; bottom: 10px; }
+    .band-member { padding: 18px 16px; }
+    .band-name { font-size: 22px; }
+    .band-role { font-size: 13px; }
+    .booking { padding: 100px 20px; }
+    .booking-actions .pill { font-size: 10px; padding: 10px 14px; }
+    footer { padding: 60px 20px 28px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; margin-bottom: 40px; }
+    .footer-bottom { flex-direction: column; gap: 8px; align-items: flex-start; }
+    .signature { font-size: clamp(48px, 16vw, 96px) !important; }
+    .marquee { padding: 14px 0; }
+    .marquee-track { font-size: 22px; }
+    .marquee-track .star { margin: 0 14px; }
+    .modal { padding: 22px 18px; }
+    .modal-cover { width: 96px; height: 96px; margin-bottom: 14px; }
+    .modal-title { font-size: 22px; }
+    .svc-btn { padding: 12px 4px; font-size: 9px; }
+    .svc-btn svg { width: 22px; height: 22px; }
+    body { padding-bottom: 64px; }  /* room for bottom nav */
+    .live, .live .h2 { line-height: 1; }
+    .live-foot { gap: 14px; flex-direction: column; align-items: flex-start; }
+    .bio-text p:first-of-type::first-letter { font-size: 64px; padding: 6px 8px 0 0; }
+    .bio-influences h4 { margin-bottom: 12px; }
+    .infl-tags span { font-size: 11px; padding: 6px 10px; }
+    .quote-card { min-height: 0; padding: 22px 20px; }
+    .quote-card .qmark { font-size: 56px; }
+    .quote-card .qtext { font-size: 16px; }
+  }
+  @media (max-width: 380px) {
+    .band-grid { grid-template-columns: 1fr; }
+    .band-member { border-right: none !important; }
+    .disco-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body data-pal="warm" data-marquee="true" data-grain="true">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-mark">★</span>
+    <a href="#about">About</a>
+    <a href="#release">Latest</a>
+    <a href="#music">Music</a>
+    <a href="#watch">Watch</a>
+    <a href="#live">Live</a>
+    <a href="#band">Band</a>
+    <a href="#press">Press</a>
+    <a href="#contact">Bookings</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-sparkles" aria-hidden="true">
+      <span>✦</span><span>✦</span><span>✦</span><span>✦</span><span>✦</span>
+    </div>
+    <div class="hero-inner" style="color: rgb(1, 1, 1)">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Bangalore · India
+        <span style="opacity:.3">/</span>
+        Upcoming EP — ‘Life in Technicolor’
+      </div>
+
+      <h1 class="hero-title">Tarang Joseph</h1>
+      <div class="hero-logo" role="img" aria-label="Tarang Joseph"></div>
+
+      <p class="hero-sub">Singer, pianist, songwriter — fusing old-school disco, funk &amp; soul with the accessibility of modern pop. A truly unique voice from Bangalore.</p>
+
+      <div class="hero-ctas">
+        <a class="pill" href="#release">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          New single — Irresistible · Apr 17 ’26
+        </a>
+        <a class="pill ghost" href="https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM" target="_blank" rel="noopener">
+          Spotify
+        </a>
+        <a class="pill ghost" href="https://music.apple.com/in/artist/tarang-joseph/1446311498" target="_blank" rel="noopener">
+          Apple Music
+        </a>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#about" aria-label="Scroll to next section">
+      <span>Scroll</span>
+      <span class="line"></span>
+    </a>
+
+    <div class="hero-strip wrap" style="width:100%;max-width:1280px;margin:0 auto;">
+      <div class="col">
+        <span class="col-label">Genre</span>
+        <span class="col-value">Nu-disco / Funk / Alt-pop</span>
+      </div>
+      <div class="col">
+        <span class="col-label">Latest single</span>
+        <span class="col-value">Irresistible · Apr ’26</span>
+      </div>
+      <div class="col">
+        <span class="col-label">Festival debut</span>
+        <span class="col-value">Echoes of Earth ’24</span>
+      </div>
+      <div class="col">
+        <span class="col-label">Scroll</span>
+        <span class="col-value">↓ The whole story</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- duplicated by JS -->
+      <span>New Single — Irresistible</span><span class="star">★</span>
+      <span>Cover, Indienglish — Spotify India</span><span class="star">★</span>
+      <span>Best EP Nominee — Indian Music Diaries ’24</span><span class="star">★</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">Who is Tarang</div>
+        <p class="lede">Bangalore-based singer, songwriter, pianist and stage performer Tarang Joseph is quickly making a name for himself amongst India’s emerging indie acts.</p>
+        <p class="lede about-lede-sub">He channels a nostalgic yet fresh blend of disco, funk and acid jazz — drawing influences from <em>Stevie Wonder</em>, <em>Michael Jackson</em>, <em>Jamiroquai</em> and <em>Daft Punk</em>, while delivering a fresh, original sound like no one else.</p>
+
+        <div class="stats">
+          <div>
+            <div class="stat-num">4L+</div>
+            <div class="stat-lbl">STREAMERS
+ACROSS PLATFORMS</div>
+          </div>
+          <div>
+            <div class="stat-num">10</div>
+            <div class="stat-lbl">Singles + 1 EP<br>over 5 years</div>
+          </div>
+          <div>
+            <div class="stat-num">★</div>
+            <div class="stat-lbl">Cover, Indienglish<br>Spotify India playlist</div>
+          </div>
+          <div>
+            <div class="stat-num">EP ’24</div>
+            <div class="stat-lbl">Best EP nominee<br>Indian Music Diaries</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-photo">
+        <img src="assets/tarang-stage.jpg" alt="Tarang Joseph on stage">
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST RELEASE -->
+  <section id="release" class="release">
+    <div class="wrap release-grid">
+      <div class="release-cover">
+        <img src="assets/irresistible.png" alt="Irresistible cover">
+      </div>
+      <div>
+        <div class="release-meta">★ New Single · Apr 17 ’26</div>
+        <div class="release-title-script">Irresistible.</div>
+        <h2 class="release-title-typo" style="display:none;">Irresistible</h2>
+        <p class="release-desc">The new single. Built on a fat groove, a sticky topline, and that signature Tarang-Joseph warmth — funk, soul, and modern pop sheen.</p>
+        <div class="stream-row">
+          <a class="pill" href="https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM" target="_blank" rel="noopener">
+            ▶ Spotify
+          </a>
+          <a class="pill" href="https://music.apple.com/in/artist/tarang-joseph/1446311498" target="_blank" rel="noopener">
+            Apple Music
+          </a>
+          <a class="pill" href="https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A" target="_blank" rel="noopener">
+            YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOGRAPHY -->
+  <section id="music" class="disco">
+    <div class="wrap">
+      <div class="disco-head">
+        <div>
+          <div class="eyebrow">The Catalogue</div>
+          <h2 class="h2">Discography</h2>
+        </div>
+        <p class="body-txt" style="margin:0;">
+          Six recent singles — plus the <em>Liquid Sunshine</em> EP — that have made noise on
+          Apple Music, Rolling Stone, and Spotify’s flagship playlists. Tap any cover to listen.
+        </p>
+      </div>
+
+      <div class="disco-grid" id="discoGrid">
+        <!-- populated by JS -->
+      </div>
+
+      <div class="disco-spotify">
+        <iframe
+          src="https://open.spotify.com/embed/artist/76Qn1AJEps9AcUgwIOHplM?utm_source=generator&theme=0"
+          loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCH -->
+  <section id="watch" class="watch">
+    <div class="wrap">
+      <div class="eyebrow">Live &amp; In the Studio</div>
+      <h2 class="h2">Watch</h2>
+      <p class="lede" style="margin-top:24px; opacity:.85;">Music videos, live takes, festival cuts.</p>
+
+      <div class="watch-grid">
+        <div class="watch-main">
+          <iframe
+            src="https://www.youtube.com/embed/uG4UloVo2Qg"
+            title="Superhuman — Tarang Joseph"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="watch-side">
+          <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjEv57l77NE4zIJRBEkXyQYH" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--burnt), var(--burnt-deep));">
+            <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+              <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Music videos</span>
+              <span style="font-family:var(--type-display); font-size:32px; line-height:0.95; text-transform:uppercase; color: var(--cream);">Music<br>Videos</span>
+            </div>
+          </a>
+          <a class="watch-card" href="https://www.youtube.com/playlist?list=PLJizIowbsLjFmC8xqj7jXTHlEKoyOPZy6" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--slate), var(--slate-ink));">
+            <div class="label" style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+              <span style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; opacity:.85;">Playlist · Live cuts</span>
+              <span style="font-family:var(--type-display); font-size:32px; line-height:0.95; text-transform:uppercase; color: var(--cream);">Live<br>Sessions</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="watch-featured">
+        <div class="feat-video">
+          <div class="frame">
+            <iframe
+              src="https://www.youtube.com/embed/uG4UloVo2Qg"
+              title="Superhuman — Official Music Video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="v-label"><span>Official Music Video</span></div>
+          <div class="v-title">Superhuman</div>
+          <div class="v-sub">w/ RANJ &amp; Mary Ann · 100 Best Songs ’22</div>
+        </div>
+
+        <div class="feat-video">
+          <div class="frame">
+            <iframe
+              src="https://www.youtube.com/embed/duBes1hFr6o"
+              title="Liquid Sunshine — Live at BIRA Taproom"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="v-label"><span>Live Session</span></div>
+          <div class="v-title">Liquid Sunshine</div>
+          <div class="v-sub">Live · BIRA Taproom, Bangalore</div>
+        </div>
+
+        <div class="feat-video">
+          <div class="frame">
+            <iframe
+              src="https://www.youtube.com/embed/VhHhL1qCsZ8"
+              title="One Track Mind — Live in Pondicherry"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="v-label"><span>Live Session</span></div>
+          <div class="v-title">One Track Mind</div>
+          <div class="v-sub">Live · Pondicherry</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE / SHOWS -->
+  <section id="live" class="live">
+    <div class="wrap">
+      <div class="eyebrow">On Stage</div>
+      <h2 class="h2">Recent Shows</h2>
+      <p class="lede" style="margin-top:24px;">
+        Festival-ready energy, jazzy funky keys, and a charismatic 5-piece — touring across India.
+      </p>
+
+      <div class="live-photos">
+        <div class="live-photo">
+          <img src="assets/live-echoes.png" alt="Live at Echoes of Earth Mainstage">
+          <div class="cap">Live at Echoes of Earth · Main Stage</div>
+        </div>
+        <div class="live-photo">
+          <img src="assets/live-bira.jpg" alt="Live at BIRA Taproom opening for The F16s">
+          <div class="cap">Live at BIRA Taproom · Alongside The F16s</div>
+        </div>
+      </div>
+
+      <div class="shows-list" id="showsList">
+        <!-- populated by JS -->
+      </div>
+
+      <div class="live-foot">
+        <p style="font-family:var(--type-mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; max-width: 50ch;">
+          Shared stages with <strong>The F16s</strong>, <strong>Peter Cat Recording Co.</strong>,
+          <strong>Till Apes</strong>, <strong>Dot</strong>, <strong>Mali</strong> and <strong>ZFEX (UK)</strong>.
+        </p>
+        <a class="pill" href="#contact">Book the band →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section id="band" class="band">
+    <div class="wrap">
+      <div class="eyebrow">The 5-Piece</div>
+      <h2 class="h2">Meet the Band</h2>
+      <p class="lede" style="margin-top:24px; opacity:.85;">the force that delivers Tarangs Signature sound with Surya's funky basslines, Shourjo's deep rhythmic pockets and Adesh's impeccable guitar tones</p>
+
+      <div class="band-photos">
+        <div class="band-photo p1"><img src="assets/band-1.jpg" alt=""></div>
+        <div class="band-photo p2"><img src="assets/band-2.jpg" alt=""></div>
+      </div>
+
+      <div class="band-collabs">
+        <h4>Touring company</h4>
+        <p>Only the best session and touring musicians in the scene — they also tour with the likes of Hanumankind, Dot. &amp; The Syllables, Derek &amp; The Cats, Frizzell D’souza and Mary Ann Alexander.</p>
+      </div>
+
+      <div class="band-grid">
+        <div class="band-member">
+          <div class="band-name">Adesh<br>Vinod</div>
+          <div class="band-role">Guitars</div>
+        </div>
+        <div class="band-member">
+          <div class="band-name">Surya<br>Kalyanaraman</div>
+          <div class="band-role">Bass</div>
+        </div>
+        <div class="band-member">
+          <div class="band-name">Shourjo<br>Chatterjee</div>
+          <div class="band-role">Drums</div>
+        </div>
+        <div class="band-member">
+          <div class="band-name">Gautam<br>David</div>
+          <div class="band-role">Saxophone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENDORSEMENT -->
+  <section id="endorsement" class="endorse">
+    <div class="wrap">
+      <div class="endorse-grid">
+        <div class="endorse-copy">
+          <div class="eyebrow">Official Endorsement</div>
+          <h2 class="h2">Officially endorsed<br>by <span class="endorse-brand">Roland</span>.</h2>
+          <p class="lede" style="margin-top:24px; opacity:.85;">
+            Roland India teamed up with Tarang on the <em>Byte Size Jams</em> series — short, sharp
+            jams played live on a Roland keyboard rig. New episodes drop on the Roland India channel.
+          </p>
+          <p class="body-txt" style="margin-top:20px;">
+            Watch the full series for more bite-sized grooves, key tricks, and behind-the-keys moments.
+          </p>
+          <div class="stream-row" style="margin-top:28px;">
+            <a class="pill" href="https://www.youtube.com/results?search_query=tarang+joseph+byte+size+jams+roland" target="_blank" rel="noopener">
+              ▶ Watch the full Byte Size Jams series
+            </a>
+            <a class="pill ghost" href="https://www.roland.com" target="_blank" rel="noopener">
+              Roland.com
+            </a>
+          </div>
+          <div class="endorse-mark">
+            <span class="roland-mark">Roland</span>
+            <span>Roland India · Artist Endorsement</span>
+          </div>
+        </div>
+        <div class="endorse-video">
+          <div class="short-frame">
+            <iframe
+              src="https://www.youtube.com/embed/KMQnH0qWdSc"
+              title="Byte Size Jams — Tarang Joseph for Roland India"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="short-cap">
+            <span class="ep">Episode · Byte Size Jams</span>
+            <span class="for">For Roland India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section id="press" class="press">
+    <div class="wrap">
+      <div class="eyebrow">In the Press</div>
+      <h2 class="h2">What People<br>Are Saying</h2>
+
+      <div class="press-grid">
+        <article class="quote-card">
+          <div>
+            <div class="qmark">“</div>
+            <p class="qtext">Liquid Sunshine is a bold, nu-disco inspired project — a coveted cover feature on Spotify India’s flagship English playlist, Indienglish.</p>
+          </div>
+          <div class="qcite">
+            <span class="qpub">Rolling Stone India</span><br>
+            <a href="https://rollingstoneindia.com/tarang-joseph-liquid-sunshine-songs/" target="_blank" rel="noopener" style="opacity:.7;">rollingstoneindia.com →</a>
+          </div>
+        </article>
+
+        <article class="quote-card">
+          <div>
+            <div class="qmark">“</div>
+            <p class="qtext">Why Bengaluru musician Tarang Joseph is dancing back to disco — and bringing the rest of the city with him.</p>
+          </div>
+          <div class="qcite">
+            <span class="qpub">The Hindu</span><br>
+            <a href="https://www.thehindu.com/entertainment/music/why-bengaluru-musician-tarang-joseph-is-dancing-back-to-disco/article68224094.ece" target="_blank" rel="noopener" style="opacity:.7;">thehindu.com →</a>
+          </div>
+        </article>
+
+        <article class="quote-card">
+          <div>
+            <div class="qmark">“</div>
+            <p class="qtext">Takes a modern songwriting trend and refines it for Indian indie — soulful, polished, with a sound that travels.</p>
+          </div>
+          <div class="qcite">
+            <span class="qpub">Rock Street Journal</span><br>
+            <a href="https://www.rsjonline.com/buzz/tarang-joseph-takes-a-modern-songwriting-trend-and-refines-it-for-indian-indie.html" target="_blank" rel="noopener" style="opacity:.7;">rsjonline.com →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section id="bio" class="bio">
+    <div class="wrap">
+      <div class="eyebrow">The Long Version</div>
+      <h2 class="h2">Biography</h2>
+
+      <div class="bio-grid">
+        <div class="bio-portrait">
+          <img src="assets/tarang-portrait.jpg" alt="Tarang Joseph portrait">
+        </div>
+
+        <div class="bio-text">
+          <p>Tarang Joseph is an accomplished singer, pianist, and songwriter from Bangalore, India. Known for his distinct voice and musically exciting yet accessible style, he fuses the richness of funk, jazz, and soul with the immediacy of pop — creating a sound that’s both nostalgic and refreshingly modern.</p>
+
+          <p>His musical journey started early. Tarang began learning classical piano at the age of four and trained for over sixteen years. By twelve he was already performing live, gaining years of experience across jazz, soul, singer-songwriter and pop — the apprenticeship that shaped his versatility as both a writer and performer.</p>
+
+          <p>Over the past five years, Tarang has released ten singles and an EP, earning placements on major editorial playlists and acclaim from Rolling Stone India, The Indian Music Diaries, A Humming Heart, and BBC’s Asia Network. A collaborative spirit, he’s previously teamed up with artists like Frizzell D’souza on <em>Ecstasy</em> and with RANJ &amp; Mary Ann on <em>Superhuman</em> — named one of Apple Music India’s “100 Best Songs of 2022.”</p>
+
+          <p>His live career has taken off rapidly. Tarang has supported and shared stages with The F16s, Peter Cat Recording Co., Till Apes, Dot, Mali, and ZFEX (UK), performing at major events and festivals including Echoes of Earth. Backed by a stellar five-piece band — Adesh Vinod (guitars), Surya Kalyanaraman (bass), Shourjo Chatterjee (drums), and Gautam David (saxophone) — he has built a reputation for live performances that blend musicianship with energy and showmanship.</p>
+
+          <p>In November 2024, Tarang released his debut EP <em>Liquid Sunshine</em>, a nu-disco project that marked a new chapter in his sound. The EP was nominated for Best EP of the Year by The Indian Music Diaries and landed him the cover of Spotify India’s flagship English playlist <em>Indienglish</em>, cementing his presence in the Indian indie pop space.</p>
+
+          <p>Now, Tarang is gearing up to release his sophomore EP — an expansive, genre-blurring record that delves into funk, soul, nu-jazz, and alternative pop. The lead singles <em>One Track Mind</em> (Aug 2025) and <em>Irresistible</em> (Apr 2026) preview the project.</p>
+
+          <p>Blending the flair of icons like Michael Jackson and Jamiroquai with the modern sheen of Franc Moody and Parcels, Tarang Joseph is carving out a signature style — rooted in timeless music but speaking directly to now. With his sophomore EP on the horizon, he continues his mission to be a global voice and a flag-bearer for Indian indie alternative pop.</p>
+
+          <div class="bio-influences">
+            <h4>Influences</h4>
+            <div class="infl-tags">
+              <span>Stevie Wonder</span>
+              <span>Michael Jackson</span>
+              <span>Jamiroquai</span>
+              <span>Bruno Mars</span>
+              <span>Jungle</span>
+              <span>Tom Misch</span>
+              <span>Parcels</span>
+              <span>Franc Moody</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="contact" class="booking">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center; color: color-mix(in oklab, var(--cream) 80%, transparent);">For Bookings &amp; Press</div>
+      <h2 class="h2">Get the band <em>on stage.</em></h2>
+      <p class="booking-sub">
+        Festivals, club shows, brand collaborations, syncs, or just a chat about the next EP —
+        drop a line and we’ll be in touch within 48 hours.
+      </p>
+      <div class="booking-actions">
+        <a class="pill" href="mailto:tarangjosephmusic@gmail.com">tarangjosephmusic@gmail.com</a>
+        <a class="pill ghost" href="tel:+919880927264">+91 98809 27264</a>
+        <a class="pill ghost" href="https://www.instagram.com/tarangjoseph/" target="_blank" rel="noopener">@tarangjoseph</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Tarang<br>Joseph<span style="color:var(--burnt)">.</span></div>
+          <p style="font-size:13px; opacity:.7; line-height:1.6; max-width:30ch;">
+            Bangalore-based singer, pianist, songwriter. Disco · Funk · Soul · Pop.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Listen</h5>
+          <a href="https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://music.apple.com/in/artist/tarang-joseph/1446311498" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A" target="_blank" rel="noopener">YouTube</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <a href="https://www.instagram.com/tarangjoseph/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A" target="_blank" rel="noopener">YouTube</a>
+          <a href="#contact">Newsletter</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:tarangjosephmusic@gmail.com">tarangjosephmusic@gmail.com</a>
+          <a href="tel:+919880927264">+91 98809 27264</a>
+          <a href="tel:+916364002770">+91 63640 02770</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="yr"></span> Tarang Joseph · All rights reserved</span>
+        <span>Site v1.0 · Bangalore → Everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Streaming services modal -->
+  <div class="modal-backdrop" id="streamModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="close-btn" aria-label="Close">×</button>
+      <div class="modal-cover"><img src="" alt=""></div>
+      <div class="modal-title" id="modalTitle">Title</div>
+      <div class="modal-sub">Year · Type</div>
+      <div class="modal-listen-label">Listen on</div>
+      <div class="modal-services"></div>
+    </div>
+  </div>
+
+  <!-- LOGIC -->
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Hide scroll cue once user scrolls past the hero
+    (function() {
+      const cue = document.querySelector('.scroll-cue');
+      if (!cue) return;
+      const hero = document.querySelector('.hero');
+      const update = () => {
+        const limit = hero ? hero.offsetHeight * 0.4 : 200;
+        cue.classList.toggle('hide', window.scrollY > limit);
+      };
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+
+    // Duplicate marquee track for seamless scroll
+    (function() {
+      const t = document.getElementById('marqueeTrack');
+      t.innerHTML = t.innerHTML + t.innerHTML;
+    })();
+
+    // Discography — 6 singles with real cover art + streaming modal
+    const SPOTIFY = 'https://open.spotify.com/artist/76Qn1AJEps9AcUgwIOHplM';
+    const APPLE = 'https://music.apple.com/in/artist/tarang-joseph/1446311498';
+    const YT = 'https://www.youtube.com/channel/UCSxE6gEDIqeNRkuIyIntA0A';
+    const releases = [
+      { title: 'Irresistible',   year: '2026', type: 'Single',     cover: 'assets/irresistible.png',
+        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+      { title: 'One Track Mind', year: '2025', type: 'Single',     cover: 'assets/one-track-mind.jpg',
+        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+      { title: 'Liquid Sunshine',year: '2024', type: 'EP',         cover: 'assets/liquid-sunshine.jpeg',
+        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+      { title: 'Take Me Away',   year: '2025', type: 'Single',     cover: 'assets/take-me-away.jpeg',
+        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+      { title: 'Make It Right',  year: '2023', type: 'Single',     cover: 'assets/make-it-right.jpeg',
+        spotify: SPOTIFY, apple: APPLE, youtube: YT },
+      { title: 'Superhuman',     year: '2022', type: 'w/ RANJ & Mary Ann', cover: 'assets/superhuman.jpeg',
+        spotify: SPOTIFY, apple: APPLE, youtube: 'https://www.youtube.com/watch?v=uG4UloVo2Qg' }
+    ];
+    const grid = document.getElementById('discoGrid');
+    grid.innerHTML = releases.map((r, i) => `
+      <button class="disco-card" data-idx="${i}" aria-label="Listen to ${r.title}">
+        <div class="art">
+          <img src="${r.cover}" alt="${r.title} cover" loading="lazy">
+          <div class="play-overlay"><div class="play-btn">▶</div></div>
+        </div>
+        <div class="meta">
+          <span class="name">${r.title}</span>
+          <span class="sub">${r.year} · ${r.type}</span>
+        </div>
+      </button>
+    `).join('');
+
+    // ICONS
+    const ICONS = {
+      spotify: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.59 14.42c-.19.32-.6.42-.92.23-2.52-1.54-5.69-1.89-9.42-1.04-.37.09-.74-.15-.83-.52-.09-.37.15-.74.52-.83 4.09-.94 7.59-.53 10.41 1.21.32.2.42.61.24.95zm1.22-2.72c-.24.39-.75.51-1.13.27-2.88-1.77-7.27-2.28-10.67-1.25-.43.13-.89-.11-1.02-.55-.13-.43.11-.89.55-1.02 3.89-1.18 8.74-.61 12.05 1.42.39.24.51.75.22 1.13zm.11-2.83C14.49 8.83 9.5 8.65 6.34 9.6c-.52.16-1.07-.13-1.23-.65-.16-.52.13-1.07.65-1.23 3.65-1.11 9.18-.9 12.92 1.32.47.28.62.89.34 1.37-.28.47-.89.62-1.36.34z"/></svg>',
+      apple: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.54 12.71c-.02-2.18 1.78-3.23 1.86-3.28-1.02-1.49-2.6-1.69-3.16-1.71-1.34-.14-2.62.79-3.3.79-.69 0-1.74-.78-2.86-.75-1.47.02-2.83.85-3.59 2.17-1.53 2.65-.39 6.57 1.1 8.72.73 1.05 1.6 2.23 2.73 2.19 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.29-.88-2.33-3.51zM15.4 6.18c.61-.73 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.64-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23z"/></svg>',
+      youtube: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6c-1 .3-1.8 1.1-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 2 .5 9.4.5 9.4.5s7.4 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>'
+    };
+
+    // Modal
+    const modal = document.getElementById('streamModal');
+    const modalCover = modal.querySelector('.modal-cover img');
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalSub = modal.querySelector('.modal-sub');
+    const modalServices = modal.querySelector('.modal-services');
+    function openModal(idx) {
+      const r = releases[idx];
+      modalCover.src = r.cover;
+      modalCover.alt = r.title + ' cover';
+      modalTitle.textContent = r.title;
+      modalSub.textContent = r.year + ' · ' + r.type;
+      modalServices.innerHTML = `
+        <a class="svc-btn spotify" href="${r.spotify}" target="_blank" rel="noopener">${ICONS.spotify}<span>Spotify</span></a>
+        <a class="svc-btn apple"   href="${r.apple}"   target="_blank" rel="noopener">${ICONS.apple}<span>Apple</span></a>
+        <a class="svc-btn youtube" href="${r.youtube}" target="_blank" rel="noopener">${ICONS.youtube}<span>YouTube</span></a>
+      `;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    grid.addEventListener('click', (e) => {
+      const card = e.target.closest('.disco-card');
+      if (card) openModal(+card.dataset.idx);
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.closest('.close-btn')) closeModal();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+    // Recent performances — multi-city, no dates
+    const shows = [
+      { venue: 'Echoes of Earth',           city: 'Bangalore · Main Stage',      tag: 'Festival' },
+      { venue: 'Parra Fest',                city: 'Goa',                         tag: 'Festival' },
+      { venue: 'Spandan Festival',          city: 'Pondicherry',                 tag: 'Festival' },
+      { venue: 'Circle of Love Festival',   city: 'Chennai',                     tag: 'Festival' },
+      { venue: 'Bonobo',                    city: 'Mumbai',                      tag: 'Club' },
+      { venue: 'Bangalore Jazz Habba',      city: 'Bangalore',                   tag: 'Headline' },
+      { venue: 'BIRA Taproom',              city: 'Opening for The F16s',        tag: 'Support' },
+      { venue: 'Echoes of Earth — Prelaunch', city: 'Bangalore',                 tag: 'Festival' },
+      { venue: 'Fandom @ Gillies Redefined', city: 'Bangalore',                  tag: 'Club' },
+      { venue: 'ZLB23 Speakeasy',           city: 'Regular Resident Band',       tag: 'Residency' },
+      { venue: 'Gin Explorers Club Festival', city: 'Multi-city',                tag: 'Festival' }
+    ];
+    document.getElementById('showsList').innerHTML = shows.map(s => `
+      <div class="show-row">
+        <div class="show-venue">${s.venue}</div>
+        <div class="show-city">${s.city}</div>
+        <div class="show-tag">${s.tag}</div>
+      </div>
+    `).join('');
+
+    // Smooth-scroll nav highlight
+    const navLinks = document.querySelectorAll('.nav a');
+    const sections = [...document.querySelectorAll('section[id], header.hero')];
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          navLinks.forEach(a => {
+            a.style.background = a.getAttribute('href') === '#' + id ? 'var(--accent)' : '';
+            a.style.color = a.getAttribute('href') === '#' + id ? 'var(--bg)' : '';
+          });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => obs.observe(s));
+
+    // Apply tweaks defaults
+    function applyTweaks(t) {
+      document.body.dataset.pal = t.palette || 'warm';
+      document.body.dataset.marquee = String(t.showMarquee !== false);
+      document.body.dataset.grain = String(t.grain !== false);
+    }
+    applyTweaks(window.__TWEAKS || {});
+  </script>
+
+</body>
+</html>
